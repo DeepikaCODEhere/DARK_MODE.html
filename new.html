@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    body{
+        padding: 25%;
+        background-color: rgb(172, 205, 235);
+        color: black;
+        font-size: 25px;
+    }
+    .dark_mode{
+        background-color: black;
+        color: whitesmoke;
+    }
+    button{
+        padding: 15px 40px;
+        text-decoration: none;
+        border-radius: 5px;
+        size: 35px;
+        color: rgba(255,255,255,0.8);  
+        background-color: rgb(145,92,182);     
+        text-transform: uppercase;
+        transition: all 0.2s ease-in-out;
+        left: 100px; top: 150px;
+    }
+    .glow-button:hover{
+        color: rgba(255,255,255,1);
+        box-shadow: 0 5px 15px rgba(145,92,182,.4);
+    }
+</style>
+</head>
+<body>
+    <h2>Welcome</h2> 
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita, magnam exercitationem dicta explicabo illum voluptatibus quidem hic ullam fugiat error natus sunt voluptatum maxime nesciunt harum? Ex ea ab nostrum.</p>
+        <button onclick="myfunction()" >Dark Mode</button>
+   <script>
+    function myfunction() {
+        var element=document.body;
+        element.classList.toggle("dark_mode");
+    }
+   </script>
+</body>
+</html>
